@@ -1,0 +1,18 @@
+@import '~normalize.css/normalize.css';
+
+// Font Nunito Sans
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700,800');
+
+html, body {
+  box-sizing: border-box;
+  font: 14px 'Nunito Sans', sans-serif;
+}
+
+body {
+  background-color: $primary-color;
+   @include set-size(100vw, 100vh);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

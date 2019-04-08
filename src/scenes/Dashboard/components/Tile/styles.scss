@@ -1,0 +1,5 @@
+.tile {
+  @include set-size(580px, 270px);
+  margin-top: 15px;
+  border: 1px solid red; 
+}

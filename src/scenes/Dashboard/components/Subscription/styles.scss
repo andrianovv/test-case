@@ -1,0 +1,40 @@
+@import 'Assets/styles/shared.scss';
+
+.subscription {
+  @include set-flex(row, space-evenly, center);
+  flex-wrap: wrap;
+  @include set-size(100%, 200px);
+  max-width: 800px;
+  padding: 20px;
+  margin: auto auto;;
+}
+
+.title {
+  @include set-font(1.5rem, $header-txt);
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.content {
+  @include set-flex(column);
+  
+  header {
+    display: flex;
+  }
+
+  span{
+    margin: 1rem;
+    color: $primary-txt;
+  }
+
+  button {
+    align-self: center;
+  }
+}
+
+.tray {
+  display: inline-block;
+  @include set-size(50px, 50px);
+  background: url('assets/images/empty-tray.png') no-repeat;
+  background-size: 100% 100%;
+}

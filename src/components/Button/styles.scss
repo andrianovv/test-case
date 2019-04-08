@@ -1,0 +1,48 @@
+.button {
+  @include set-flex(row, center, center);
+  padding: 0.8rem 1rem;
+  @include no-borders();
+  border-radius: 5px;
+  font-family: 'HKGrotesk-Regular', sans-serif;
+  color: $white;
+  cursor: pointer;
+
+  &.primary {
+    @include set-btn-bg($btn-primary, lighten($btn-primary, 20%), darken($btn-primary, 20%));
+  }
+
+  &.blue {
+    @include set-btn-bg($btn-blue, lighten($btn-blue, 20%), darken($btn-blue, 20%));
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+:global {
+  .btn-small {
+    width: fit-content;
+  }
+
+  .btn-middle {
+    width: 50%;
+  }
+
+  .btn-large {
+    width: 100% !important;
+  }
+
+  .btn-one-line-text {
+    white-space: nowrap;
+  }
+}

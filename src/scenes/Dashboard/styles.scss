@@ -1,0 +1,7 @@
+.wrapper {
+  display: flex;
+  @include set-size(80%, 100vh);
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: $white;
+}

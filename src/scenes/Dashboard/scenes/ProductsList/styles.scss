@@ -1,0 +1,26 @@
+@import 'Assets/styles/shared.scss';
+
+.content {
+  @include set-flex(column, flex-start, center);
+  width: 100%;
+  padding-top: 10px;
+
+  footer {
+    @include set-flex(row, space-between, center);
+    @include set-size(100%, 50px);
+    min-height: 50px;
+    background-color: $second-color;
+    margin-top: 25px;
+    padding: 0 80px;
+  }
+}
+
+.list {
+  overflow-y: auto; 
+}
+
+.additing {
+  cursor: pointer;
+}
+
+

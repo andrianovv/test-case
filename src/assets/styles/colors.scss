@@ -1,0 +1,20 @@
+// Main colors
+$white: #ffffff;
+$black: #000000;
+$red: #ff0000;
+
+$primary-color: #f3f3f3;
+$second-color: #FCFCFC;
+
+$primary-txt: #707A73;
+$header-txt: #2F3B42;
+
+$btn-primary: #4a67a2;
+$btn-blue: #0072CF;
+
+// export for using inside components
+:export {
+  white: $white;
+  black: $black;
+  red: $red;
+}

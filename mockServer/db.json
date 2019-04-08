@@ -1,0 +1,107 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product A",
+      "ratePlans": [{
+          "id": 11,
+          "name": "Rate Plan 11",
+          "price": 11
+        },
+        {
+          "id": 12,
+          "name": "Rate Plan 12",
+          "price": 12
+        },
+        {
+          "id": 13,
+          "name": "Rate Plan 13",
+          "price": 13
+        },
+        {
+          "id": 14,
+          "name": "Rate Plan 14",
+          "price": 14
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Product B",
+      "ratePlans": [
+        {
+          "id": 21,
+          "name": "Rate Plan 21",
+          "price": 21
+        },
+        {
+          "id": 22,
+          "name": "Rate Plan 22",
+          "price": 22
+        },
+        {
+          "id": 23,
+          "name": "Rate Plan 23",
+          "price": 23
+        },
+        {
+          "id": 24,
+          "name": "Rate Plan 24",
+          "price": 24
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Product C",
+      "ratePlans": [
+        {
+          "id": 31,
+          "name": "Rate Plan 31",
+          "price": 31
+        },
+        {
+          "id": 32,
+          "name": "Rate Plan 32",
+          "price": 32
+        },
+        {
+          "id": 33,
+          "name": "Rate Plan 33",
+          "price": 33
+        },
+        {
+          "id": 34,
+          "name": "Rate Plan 34",
+          "price": 34
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Product D",
+      "ratePlans": [
+        {
+          "id": 41,
+          "name": "Rate Plan 41",
+          "price": 41
+        },
+        {
+          "id": 42,
+          "name": "Rate Plan 42",
+          "price": 42
+        },
+        {
+          "id": 43,
+          "name": "Rate Plan 43",
+          "price": 43
+        },
+        {
+          "id": 44,
+          "name": "Rate Plan 44",
+          "price": 44
+        }
+      ]
+    }
+  ]
+}

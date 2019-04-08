@@ -1,0 +1,29 @@
+{
+  "verbose": true,
+  "transform": {
+    ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
+  },
+  "testRegex": "(/spec/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+  "testPathIgnorePatterns": ["/dist/", "/node_modules/"],
+  "moduleFileExtensions": ["ts", "tsx", "js"],
+  "globals": {
+    "window": {},
+    "ts-jest": {
+      "tsConfigFile": "./tsconfig.json"
+    }
+  },
+  "moduleNameMapper": {
+    "\\.scss$": "identity-obj-proxy",
+    "\\.(gif|ttf|eot|svg|png)$": "<rootDir>/__mocks__/fileMock.js",
+    "Components/(.*)": "<rootDir>/src/components/$1",
+    "Scenes/(.*)": "<rootDir>/src/scenes/$1",
+    "Redux/(.*)": "<rootDir>/src/redux/$1",
+    "Types/(.*)": "<rootDir>/src/types/$1",
+    "Assets/(.*)": "<rootDir>/src/assets/$1",
+    "Helpers/(.*)": "<rootDir>/src/helpers/$1"
+   },
+  "setupFiles": [
+    "./jest.stubs.js"
+  ],
+  "setupTestFrameworkScriptFile": "./setupTests.js"
+}

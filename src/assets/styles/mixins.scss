@@ -1,0 +1,58 @@
+@mixin set-size($width: 0px, $height: 0px) {
+  width: $width;
+  height: $height;
+}
+
+@mixin set-size-bg($width: 0px, $height: 0px, $bg: inherit) {
+  @include set-size($width, $height);
+  background-color: $bg;
+}
+
+@mixin set-font($size: 14px, $color: black){
+  font-size: $size;
+  color: $color;
+}
+
+@mixin set-flex($flex-direction: row, $justify-content: flex-start, $align-items: stretch) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin set-position($position: static, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin cut-long-text() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin no-borders() {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+@mixin set-btn-bg($bg: inherit, $hoverBg: inherit, $activeBg: inherit) {
+  background-color: $bg;
+  transition: background-color 100ms;
+
+  &:hover {
+    background-color: $hoverBg;
+  }
+
+  &:disabled:hover {
+    background-color: $bg;
+  }
+
+  &:active {
+    background-color: $activeBg;
+  }
+}
